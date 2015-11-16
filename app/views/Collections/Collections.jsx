@@ -13,7 +13,10 @@ export default class Collections extends Component {
         return ['#starwars', '#dog'].map((collection, i) => {
             const name = collection;
             return (
-                <Collection name={name} key={i}/>
+                <li className="grid-item 1/2 mb">
+                    <Collection name={name}
+                                key={i}/>
+                </li>
             );
         });
 
@@ -23,11 +26,16 @@ export default class Collections extends Component {
         const items = this.renderItems();
 
         return (
-            <div>
+            <div className="wrapper">
                 <h1>Collections</h1>
 
-                {items}
+                <p>A collection of free Climb.social feeds.</p>
+
+                <ul className="grid list-bare">
+                    {items}
+                </ul>
             </div>
+
         );
     }
 }
