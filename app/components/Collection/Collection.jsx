@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import {Link} from 'react-router';
 
 /**
  * A component to represent a Collection
@@ -17,12 +18,12 @@ export default class Collection extends Component {
         const {name} = this.props;
 
         return (
-            <a href="#"
-               className="box box-round">
+            <Link to="/collections/abc"
+                  className="box box-round box-raised">
                 <h2>
                     {name}
                 </h2>
-            </a>
+            </Link>
         );
     }
 }

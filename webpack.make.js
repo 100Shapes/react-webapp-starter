@@ -166,7 +166,7 @@ module.exports = function makeWebpackConfig (options) {
         };
     }
 
-    // Add jsLoader to the loader list
+    // Add jsLoader to the loader List
     config.module.loaders.push(jsLoader);
 
     // CSS LOADER
@@ -192,7 +192,7 @@ module.exports = function makeWebpackConfig (options) {
         cssLoader.loader = 'null';
     }
 
-    // Add cssLoader to the loader list
+    // Add cssLoader to the loader List
     config.module.loaders.push(cssLoader);
 
     /**

@@ -2,7 +2,8 @@ import React from 'react';
 import {Router, Route, IndexRoute} from 'react-router';
 
 import App from '../views/App';
-import Collections from '../views/Collections';
+import CollectionsList from '../views/Collections/List';
+import CollectionsDetail from '../views/Collections/Detail';
 
 const routes = (
     <Router>
@@ -10,7 +11,10 @@ const routes = (
         <Route path="/"
                component={App}>
 
-            <IndexRoute component={Collections}/>
+            <IndexRoute component={CollectionsList}/>
+
+            <Route path="collections/:id"
+                   component={CollectionsDetail}/>
 
         </Route>
 
