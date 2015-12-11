@@ -12,7 +12,7 @@ var path = require('path');
  * @param {boolean} options.BUILD Generate a build config
  * @returns {Object} Webpack configuration object
  */
-module.exports = function makeWebpackConfig (options) {
+module.exports = function makeWebpackConfig(options) {
     /**
      * Environment type
      * BUILD is for generating minified builds
@@ -43,7 +43,11 @@ module.exports = function makeWebpackConfig (options) {
         config.entry = {};
     } else {
         config.entry = {
-            app: './app'
+            app: './app',
+            vendor: [
+                'react',
+                'react-dom'
+            ]
         };
     }
 
@@ -110,6 +114,9 @@ module.exports = function makeWebpackConfig (options) {
             // You can add here any file extension you want to get copied to your output
             test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
             loader: 'file'
+        }, {
+            test: /\.json$/,
+            loader: 'json'
         }]
     };
 
@@ -166,7 +173,7 @@ module.exports = function makeWebpackConfig (options) {
         };
     }
 
-    // Add jsLoader to the loader List
+    // Add jsLoader to the loader list
     config.module.loaders.push(jsLoader);
 
     // CSS LOADER
@@ -192,7 +199,7 @@ module.exports = function makeWebpackConfig (options) {
         cssLoader.loader = 'null';
     }
 
-    // Add cssLoader to the loader List
+    // Add cssLoader to the loader list
     config.module.loaders.push(cssLoader);
 
     /**
