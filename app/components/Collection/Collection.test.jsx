@@ -7,14 +7,7 @@ const {describe, it} = global;
 
 const renderComponent = (props = {}) => {
     const renderer = TestUtils.createRenderer();
-    renderer.render(
-    < Collection
-    {...
-        props
-    }
-    />
-    )
-    ;
+    renderer.render(<Collection {...props} />);
     return renderer.getRenderOutput();
 };
 

@@ -22,7 +22,7 @@ export default class App extends Component {
                     <hr/>
                 </header>
 
-                {React.cloneElement(this.props.children)}
+                hello
 
                 <footer>
                     <hr/>
