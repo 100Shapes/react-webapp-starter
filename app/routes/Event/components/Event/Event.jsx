@@ -1,32 +1,20 @@
 import React, {Component, PropTypes} from 'react';
-import ImmutablePropTypes from 'react-immutable-proptypes';
-
 /**
- * The In Component
+ * Event Component
  */
-export default class In extends Component {
+export default class Event extends Component {
 
     static propTypes = {
-
-        event: ImmutablePropTypes.mapOf(
-            PropTypes.shape({
-                name: PropTypes.string.isRequired,
-                subtitle: PropTypes.number.isRequired
-            }).isRequired
-        ).isRequired,
-
-        user: ImmutablePropTypes.mapOf(
-            PropTypes.shape({
-                name: PropTypes.string.isRequired
-            }).isRequired
-        )
+        name: PropTypes.string.isRequired,
+        subtitle: PropTypes.string.isRequired
     };
 
     render() {
-
+        const {name, subtitle} = this.props;
         return (
             <div>
-                <h1>In</h1>
+                <h2 className="mb0">{name}</h2>
+                <p>{subtitle}</p>
             </div>
         );
     }

@@ -1,19 +1,17 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+
+import EventContainer from '../Event';
 
 /**
  * App component
  */
 export default class App extends Component {
 
-    static propTypes = {
-        children: PropTypes.node.isRequired
-    };
-
     render() {
         return (
             <div>
                 <h1>App</h1>
-                {this.props.children}
+                <EventContainer />
             </div>
         );
     }
