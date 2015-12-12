@@ -5,3 +5,9 @@ export const startEvent = () => {
         action: actions.EVENT_STARTED
     }
 };
+
+export const loadEvent = (eventId) => {
+    return (dispatch) => {
+
+    };
+};

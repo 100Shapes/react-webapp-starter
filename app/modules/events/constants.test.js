@@ -6,8 +6,12 @@ const {describe, it} = global;
 
 describe('Module: events (constants)', () => {
 
-    it('defines an EVENT_LOAD type', () => {
-        expect(actions.EVENT_LOAD).to.be.defined;
+    it('defines an EVENT_LOAD_REQUESTED type', () => {
+        expect(actions.EVENT_REQUESTED).to.be.defined;
+    });
+
+    it('defines an EVENT_LOAD_COMPLETED type', () => {
+        expect(actions.EVENT_LOAD_COMPLETED).to.be.defined;
     });
 
     it('defines an EVENT_STARTED type', () => {
