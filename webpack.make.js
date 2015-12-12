@@ -51,6 +51,7 @@ module.exports = function makeWebpackConfig(options) {
                 'react-router',
                 'redux-thunk',
                 'history',
+                'react-immutable-proptypes',
                 'immutable'
             ]
         };

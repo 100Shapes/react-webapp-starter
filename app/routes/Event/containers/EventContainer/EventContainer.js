@@ -1,6 +1,6 @@
-import {Component, createElement, PropTypes} from 'react';
+import {Component, createElement} from 'react';
 import {connect} from 'react-redux';
-import {Map} from 'immutable';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 
 
 import Event from '../../components/Event';
@@ -11,9 +11,8 @@ import Event from '../../components/Event';
 class EventContainer extends Component {
 
     static propTypes = {
-        event: PropTypes.instanceOf(Map)
+        event: ImmutablePropTypes.map
     };
-
 
     render() {
         const {event} = this.props;
