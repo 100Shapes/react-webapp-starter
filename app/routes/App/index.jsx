@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'css/main.less';
 
 import EventContainer from '../Event';
 
