@@ -1,8 +1,11 @@
 import {combineReducers} from 'redux';
 import {routerStateReducer as router} from 'redux-router';
 
+import event from './events/reducers';
+
 const rootReducer = combineReducers({
-    router
+    router,
+    event
 });
 
 export default rootReducer;

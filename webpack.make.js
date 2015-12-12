@@ -50,7 +50,8 @@ module.exports = function makeWebpackConfig(options) {
                 'react-redux',
                 'react-router',
                 'redux-thunk',
-                'history'
+                'history',
+                'immutable'
             ]
         };
     }
