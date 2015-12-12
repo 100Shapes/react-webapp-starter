@@ -46,7 +46,13 @@ module.exports = function makeWebpackConfig(options) {
             app: './app',
             vendor: [
                 'react',
-                'react-dom'
+                'react-dom',
+                'react-redux',
+                'react-router',
+                'redux-thunk',
+                'history',
+                'react-immutable-proptypes',
+                'immutable'
             ]
         };
     }
