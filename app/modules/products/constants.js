@@ -1,0 +1,1 @@
+export const PRODUCTS_RECEIVED = 'products/PRODUCTS_RECEIVED';

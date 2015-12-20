@@ -8,6 +8,8 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 const log = debug('app:bootstrap');
 
+import 'css/main.less';
+
 import routes from './config/routes';
 import configureStore from './stores/configureStore';
 import {getAllProducts} from './modules/products/actions';
