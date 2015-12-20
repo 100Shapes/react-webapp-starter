@@ -1,6 +1,0 @@
-//export const EVENT_LOAD = 'EVENT_LOAD';
-//export const EVENT_STARTED = 'EVENT_STARTED';
-//export const EVENT_ENDED = 'EVENT_ENDED';
-//export const EVENT_ACCESS_GRANTED = 'EVENT_ENDED';
-
-export const USER_SIGNIN_FULFILLED = 'USER_SIGNIN_FULFILLED';

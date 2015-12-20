@@ -226,7 +226,7 @@
     ],
     "complexity": [
       1,
-      3
+      4
     ],
     "max-len": [
       2,
@@ -234,7 +234,7 @@
     ],
     "max-params": [
       2,
-      2
+      3
     ],
     // jsx rules
     "react/jsx-quotes": 0,

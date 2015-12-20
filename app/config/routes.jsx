@@ -2,7 +2,7 @@ import React from 'react';
 import {Router, Route} from 'react-router';
 import {createHistory, useBasename} from 'history';
 
-import App from '../routes/App';
+import App from '../containers/App';
 
 const history = useBasename(createHistory)({
     basename: '/'
@@ -10,12 +10,8 @@ const history = useBasename(createHistory)({
 
 const routes = (
     <Router history={history}>
-        <Route path="/:eventId"
-               component={App}
-               onEnter={(nextState, replaceState, cb) => {
-
-               }}
-        />
+        <Route path="/"
+               component={App}/>
     </Router>
 );
 

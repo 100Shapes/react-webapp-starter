@@ -1,5 +1,1 @@
-const constants = {
-    FIREBASE_REF: 'https://community-climber.firebaseio.com'
-};
-
-export default constants;
+export const FIREBASE_REF = 'https://community-climber.firebaseio.com';

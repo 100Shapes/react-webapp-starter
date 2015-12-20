@@ -10,8 +10,11 @@ const log = debug('app:bootstrap');
 
 import routes from './config/routes';
 import configureStore from './stores/configureStore';
+import {getAllProducts} from './modules/products/actions';
 
 const store = configureStore();
+
+store.dispatch(getAllProducts());
 
 // Enable debug messages outside of production
 if (process.env.NODE_ENV !== 'production') {

@@ -1,13 +1,13 @@
 import {combineReducers} from 'redux';
 import {routerStateReducer as router} from 'redux-router';
 
-import event from './events/reducers';
-import user from './user/reducers';
+import cart from './cart';
+import products from './products';
 
 const rootReducer = combineReducers({
     router,
-    user,
-    event
+    cart,
+    products
 });
 
 export default rootReducer;
